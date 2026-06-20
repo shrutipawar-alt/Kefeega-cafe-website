@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kafeega Cafe</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<button id="topBtn" onclick="topFunction()">
+    ⬆
+</button>
+
+<script>
+let mybutton = document.getElementById("topBtn");
+
+window.onscroll = function() {
+    if (
+        document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+    <img src="logo.jpeg" alt="Logo">
+    <span>Kafeega Cafe</span>
+</div>
+    
+        
+<li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Where Every Cup Tells A Story</h1>
+        <p>Fresh Coffee • Delicious Food • Cozy Atmosphere</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+       Welcome to Kafeega Cafe, where great coffee, delicious food, and memorable moments come together.
+
+At Kafeega Cafe, we believe that every cup of coffee tells a story. Our passion is to serve freshly brewed beverages, tasty snacks, and delightful desserts in a warm and welcoming atmosphere. Whether you're meeting friends, working on your next big idea, or simply taking a break, Kafeega Cafe is the perfect place to relax and enjoy.
+
+Our mission is to provide high-quality food and beverages while creating an experience that makes every guest feel at home. We focus on freshness, quality, and exceptional customer service to ensure that every visit is special.
+
+Thank you for choosing Kafeega Cafe. We look forward to serving you and becoming your favorite destination for coffee and conversations.
+
+    </p>
+</section>
+
+
+<section class="premium-info">
+
+    <div class="info-box hours">
+        <h3>⏰ Opening Hours</h3>
+        <p>Mon - Sun</p>
+        <p>9:00 AM - 11:00 PM</p>
+    </div>
+
+    <div class="info-box choose">
+        <h3>☕ Why Choose Us</h3>
+        <p>Premium Coffee</p>
+        <p>Fresh Food</p>
+        <p>Cozy Ambience</p>
+    </div>
+
+    <div class="info-box stats">
+        <h3>📊 Our Statistics</h3>
+        <p>☕ 10,000+ Cups Served</p>
+        <p>😊 5,000+ Customers</p>
+        <p>🍰 50+ Menu Items</p>
+    </div>
+
+</section>
+<section id="menu" class="menu">
+    <h2>Our Special Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="coffee1.jpeg">
+            <h3>Javachip Frappe</h3>
+    
+        </div>
+
+        <div class="card">
+            <img src="coffee2.jpeg">
+            <h3>Crunchy</h3>
+            
+        </div>
+
+        <div class="card">
+            <img src="dessert.jpeg">
+            <h3>Ice Latte</h3>
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-form">
+
+        <form>
+
+            <input
+            type="text"
+            placeholder="Your Name"
+            required>
+
+            <input
+            type="email"
+            placeholder="Your Email"
+            required>
+
+            <textarea
+            rows="6"
+            placeholder="Your Message"
+            required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Best coffee in town! Amazing taste and service."</p>
+            <h4>- Rahul Sharma</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Loved the ambience and desserts. Highly recommended."</p>
+            <h4>- Priya Patel</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐☆</div>
+            <p>"Great place to relax and enjoy coffee."</p>
+            <h4>- Aman Verma</h4>
+        </div>
+
+    </div>
+</section>
+
+<!-- Google Map -->
+
+<section>
+
+    
+
+   <section id="map">
+    <h2>Find Us</h2>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5658493837846!2d73.1025166!3d19.2141558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795bb37e5311b%3A0x587151cfe87a3cff!2sKafeega%20Cafe!5e0!3m2!1sen!2sin!4v1781875803542!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</section>
+</section>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h3> KafeegaCafe  ☕</h3>
+
+    <p>
+        Fresh Coffee • Great Food • Good Vibes
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 Kafeega Cafe.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- WhatsApp Button -->
+
+<a
+href="https://wa.me/919999999999"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+<div class="social-links">
+
+    <a href="https://www.instagram.com/kafeegacafe?igsh=b2JnMDlndWUyNXpj"
+       target="_blank"
+       class="instagram">
+
+       <i class="fab fa-instagram"></i> Follow Us on Instagram
+
+    </a>
+
+</div>
+
+</a>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
